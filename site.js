@@ -147,7 +147,7 @@
                  dom.removeClass('linkable')
                  window.status = ''
               }
-            }else if ($.inArray(nearest.node.name, ['arbor.js','code','docs','demos']) >=0 ){
+            }else if ($.inArray(nearest.node.name, ['me','code','docs','education']) >=0 ){
               if (nearest.node.name!=_section){
                 _section = nearest.node.name
                 that.switchSection(_section)
@@ -300,7 +300,7 @@
             $(this).hide()
             $(that).trigger({type:'mode', mode:'visible', dt:dt})
           })
-          document.title = "arbor.js"
+          document.title = "einan resume"
           break
           
           case 'introduction':
@@ -312,7 +312,7 @@
                     
           $('#docs').find(">div").hide()
           $('#docs').find('#'+_path).show()
-          document.title = "arbor.js » " + _path
+          document.title = "einan resume » " + _path
           break
         }
         
@@ -347,12 +347,12 @@
              ".tar.gz":{color:CLR.code, alpha:0, link:'/js/dist/arbor-v0.92.tar.gz'}
             },
       edges:{
-        "arbor.js":{
-          demos:{length:.8},
+        "me":{
+          education:{length:.8},
           docs:{length:.8},
           code:{length:.8}
         },
-        demos:{halfviz:{},
+        education:{halfviz:{},
                atlas:{},
                echolalia:{}
         },
