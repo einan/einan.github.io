@@ -233,7 +233,7 @@
         dom.find('> a').click(that.back)
         $('.more').one('click',that.more)
         
-        $('#personal dl:not(.datastructure) dt').click(that.reveal)
+        $('#docs dl:not(.datastructure) dt').click(that.reveal)
         that.update()
         return that
       },
@@ -296,7 +296,7 @@
           dom.find('p').text('emrah inan resume using arbor.js and jQuery')
           dom.find('> a').removeClass('active').attr('href','#')
 
-          $('#personal').fadeTo('fast',0, function(){
+          $('#docs').fadeTo('fast',0, function(){
             $(this).hide()
             $(that).trigger({type:'mode', mode:'visible', dt:dt})
           })
@@ -308,10 +308,10 @@
           $(that).trigger({type:'mode', mode:'hidden', dt:dt})
           dom.find('> p').text(_path)
           dom.find('> a').addClass('active').attr('href','#')
-          $('#personal').stop(true).css({opacity:0}).show().delay(333).fadeTo('fast',1)
+          $('#docs').stop(true).css({opacity:0}).show().delay(333).fadeTo('fast',1)
                     
-          $('#personal').find(">div").hide()
-          $('#personal').find('#'+_path).show()
+          $('#docs').find(">div").hide()
+          $('#docs').find('#'+_path).show()
           document.title = "einan resume » " + _path
           break
         }
