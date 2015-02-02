@@ -4,76 +4,130 @@
 
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>emrah inan resume with arbor.js</title>
-  <script type="text/javascript" src="http://use.typekit.com/mxh7kqd.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>emrah inan resume with arbor.js</title>
+<script type="text/javascript" src="http://use.typekit.com/mxh7kqd.js"></script>
+<script type="text/javascript">
+	try {
+		Typekit.load();
+	} catch (e) {
+	}
+</script>
+<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
 </head>
 <body>
-  <div id="arbor">
-  <div id="nav">
-    <a class="back" href="#"> <- </a>
-    <p>einan resume with arbor.js and jQuery</p>
-  </div>
-  <canvas id="sitemap" width="800" height="400"></canvas>
+	<div id="arbor">
+		<div id="nav">
+			<a class="back" href="#"> <- </a>
+			<p>einan resume with arbor.js and jQuery</p>
+		</div>
+		<canvas id="sitemap" width="800" height="400"></canvas>
 
-  <div id="docs">
-    <div id="introduction">
-      <h2>about einan</h2>
-      <p>Arbor is a graph visualization library built with web workers and jQuery. Rather than trying to be an all-encompassing framework, arbor provides an efficient, force-directed layout algorithm plus abstractions for graph organization and screen refresh handling.</p>
-      <p>It leaves the actual screen-drawing to you. This means you can use it with canvas, <b>SVG</b>, or even positioned <b>HTML</b> elements; whatever display approach is appropriate for your project and your performance needs. </p>
-      <p>As a result, the code you write with it can be focused on the things that make your project unique – the graph data and your visual style – rather than spending time on the physics math that makes the layouts possible.</p>
-      <p>&nbsp;</p>
-      <p class="code">
-          &lt;script src="path/to/jquery.min.js"&gt;&lt;/script&gt;<br>
-          &lt;script src="path/to/arbor.js"&gt;&lt;/script&gt;  
-      </p>
-    </div>
-    
-    <div id="education">
-      <h2>PhD.</h2>
-      <dl>
-        <dt>addNode<em>(name, data)</em></dt>
-        <dd>
-          <p><code class="arg">name</code> is a string identifier that will be used in talking to the particle
-          system about this node.</p>
-          <p><code class="arg">data</code> is an object with keys and values set by the user. you can use it to
-          store additional information about the node for later use in e.g., drawing.</p>
-          <div class="desc">Creates a new node in the particle system and returns the resulting <code>Node</code> object.</div>
-          <hr>
-        </dd>
-        
-        <dt>getNode<em>(name)</em></dt>
-        <dd>
-          <p><code class="arg">name</code> is an identifier for a node already in the system</p>
-          <div class="desc">Returns the corresponding <code>Node</code> object or 
-            <code>undefined</code> if none is found. If called with a node as an 
-            argument, it will return that same node (for idempotence).</div>
-            <hr>
-        </dd>
+		<div id="docs">
+			<div id="introduction">
+				<h2>about einan</h2>
+				<p>Arbor is a graph visualization library built with web workers
+					and jQuery. Rather than trying to be an all-encompassing framework,
+					arbor provides an efficient, force-directed layout algorithm plus
+					abstractions for graph organization and screen refresh handling.</p>
+				<p>
+					It leaves the actual screen-drawing to you. This means you can use
+					it with canvas, <b>SVG</b>, or even positioned <b>HTML</b>
+					elements; whatever display approach is appropriate for your project
+					and your performance needs.
+				</p>
+				<p>As a result, the code you write with it can be focused on the
+					things that make your project unique – the graph data and your
+					visual style – rather than spending time on the physics math that
+					makes the layouts possible.</p>
+				<p>&nbsp;</p>
+				<p class="code">
+					&lt;script src="path/to/jquery.min.js"&gt;&lt;/script&gt;<br>
+					&lt;script src="path/to/arbor.js"&gt;&lt;/script&gt;
+				</p>
+			</div>
 
-        <dt>pruneNode<em>(node)</em> </dt>
-        <dd>
-          <p><code class="arg">node</code> is either an identifier string or a Node object</p>
-          <div class="desc">Removes the corresponding <code>Node</code> from the
-            particle system (as well as any <code>Edge</code>s in which it is a participant).</div>
-            <hr>
-        </dd>
-      </dl>
-    </div>
+			<div id="education">
+				<h2>PhD.</h2>
+				<dl>
+					<dt>
+						addNode<em>(name, data)</em>
+					</dt>
+					<dd>
+						<p>
+							<code class="arg">name</code>
+							is a string identifier that will be used in talking to the
+							particle system about this node.
+						</p>
+						<p>
+							<code class="arg">data</code>
+							is an object with keys and values set by the user. you can use it
+							to store additional information about the node for later use in
+							e.g., drawing.
+						</p>
+						<div class="desc">
+							Creates a new node in the particle system and returns the
+							resulting
+							<code>Node</code>
+							object.
+						</div>
+						<hr>
+					</dd>
 
-  </div>
-  
-  <div id="footer"><a href=""> einan resume</a></div>
-</div>  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-  <script src="http://arborjs.org/js/jquery.address-1.4.min.js"></script>
+					<dt>
+						getNode<em>(name)</em>
+					</dt>
+					<dd>
+						<p>
+							<code class="arg">name</code>
+							is an identifier for a node already in the system
+						</p>
+						<div class="desc">
+							Returns the corresponding
+							<code>Node</code>
+							object or
+							<code>undefined</code>
+							if none is found. If called with a node as an argument, it will
+							return that same node (for idempotence).
+						</div>
+						<hr>
+					</dd>
 
-  <script src="arbor.js"></script>
-  <script src="arbor-tween.js"></script>
-  <script src="http://arborjs.org/js/lib/arbor-graphics.js"></script>
+					<dt>
+						pruneNode<em>(node)</em>
+					</dt>
+					<dd>
+						<p>
+							<code class="arg">node</code>
+							is either an identifier string or a Node object
+						</p>
+						<div class="desc">
+							Removes the corresponding
+							<code>Node</code>
+							from the particle system (as well as any
+							<code>Edge</code>
+							s in which it is a participant).
+						</div>
+						<hr>
+					</dd>
+				</dl>
+			</div>
 
-  <script src="site.js"></script>
+		</div>
+
+		<div id="footer">
+			<a href="http://seagentdev.ege.edu.tr/index.php">Seagent
+				Laboratory </a> Ege University, 35100, Bornova, Izmir, Turkey
+		</div>
+	</div>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<!-- 	<script src="http://arborjs.org/js/jquery.address-1.4.min.js"></script> -->
+
+	<script src="arbor.js"></script>
+	<script src="arbor-tween.js"></script>
+	<!-- 	<script src="http://arborjs.org/js/lib/arbor-graphics.js"></script> -->
+
+	<script src="site.js"></script>
 </body>
 </html>
