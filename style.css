@@ -118,26 +118,26 @@ body{
 }
 
 
-#docs > div{
+#personal > div{
   display:none;
   padding:0 0 60px 0;
 }
 
-#docs{
+#personal{
   position:relative;
   margin:20px 0 0 160px;
   padding:0 70px 0 0;
 /*  border-right:1px solid #ccc;*/
 }
 
-#docs h1{
+#personal h1{
   margin:20px 0 2px 0;
   color:#998;
   font:16px "Gill Sans", Helvetica, Arial, sans-serif;
   color:#ad621c;
 }
 
-/*#docs h1{
+/*#personal h1{
   margin:20px 0 2px -150px;
   width:134px;
   color:#998;
@@ -146,13 +146,13 @@ body{
 }
 */
 
-#docs dl + h1{
+#personal dl + h1{
   margin-top:30px;
   padding-top:10px;
 }
 
 
-#docs h2{
+#personal h2{
   margin:0;
   position:absolute;
   left:-150px;
@@ -165,19 +165,19 @@ body{
   color:#998;  
 }
 
-#docs h2 a{
+#personal h2 a{
   color:black;
   text-decoration:none;
   font-size:130%;
 }
 
-#docs > div > p{
+#personal > div > p{
   display:block;
   text-indent:1em;
   width:380px;
 }
 
-#docs p.code{
+#personal p.code{
 /*  width:999px;*/
   display:block;
   margin:13px;
@@ -186,31 +186,31 @@ body{
   color:#665;
 }
 
-#docs p code{
+#personal p code{
   font:12px Monaco, sans-serif;
   color:#665;
 }
-#docs p.code+p{
+#personal p.code+p{
   text-indent:0;
 }
 
-#docs h2:first-child+p{
+#personal h2:first-child+p{
   margin-top:0;
 }
 
-#docs .figure + p,
-#docs h2+p{
+#personal .figure + p,
+#personal h2+p{
   text-indent:0;
 }
 
 
-#docs b{
+#personal b{
   text-transform:uppercase;
   font-size:80%;
 }
 
 
-#docs .figure{
+#personal .figure{
   position:absolute;
   left:440px;
 }
@@ -219,7 +219,7 @@ dl{
   margin:0 0 16px 0;
 }
 
-#docs code{
+#personal code{
   font:12px Monaco, Courier, monospace;
 }
 dt{
@@ -270,40 +270,40 @@ dd .desc .bang{
   margin-top:5px;
 }
 
-#docs dd p{
+#personal dd p{
   text-indent:-10px;
   margin:0 0 2px 0;
   width:380px;
 }
 
-#docs .lead-in{
+#personal .lead-in{
   margin-bottom:16px;  
 }
-#docs .lead-in p{
+#personal .lead-in p{
   margin:0;
   text-indent:0;
   width:380px;
   font-style:italic;
 }
-#docs .lead-in .more{
+#personal .lead-in .more{
   color:#AD621C;
   text-decoration:none;
   font-style:italic;
 }
-#docs .lead-in .more:hover{
+#personal .lead-in .more:hover{
   text-decoration:underline;
 }
-#docs .lead-in .more ~ *{
+#personal .lead-in .more ~ *{
   display:none;
 }
 
-#docs .lead-in p.code{
+#personal .lead-in p.code{
   width:570px;
   font-style:normal;
   margin:10px;
 }
 
-#docs .lead-in hr{
+#personal .lead-in hr{
   margin:0px 0 12px 0px;
   border:0;
   border-top:1px solid #aa9;
@@ -314,23 +314,23 @@ dd .desc .bang{
 
 
 
-#docs dd p code.arg{
+#personal dd p code.arg{
   color:#ad621c;
 }
 
-#docs dd hr{
+#personal dd hr{
   margin:-4px 0 12px -10px;
   border:0;
   border-top:1px solid #aa9;
   width:390px;
 }
 
-#docs .lead-in ul{
+#personal .lead-in ul{
   margin:0 0 20px 13px;
   font-style:italic;
   color:#998;
 }
-#docs .lead-in ul em{
+#personal .lead-in ul em{
   color:black;
   font-style:normal;
   width:60px;
@@ -338,7 +338,7 @@ dd .desc .bang{
   text-align:right;
 }
 
-#docs .lead-in ul b{
+#personal .lead-in ul b{
   size:60%;
   color:#950;
   text-transform:none;
@@ -349,14 +349,14 @@ dd .desc .bang{
   text-align:right;
   margin-right:12px;
 }
-#docs .lead-in p a{
+#personal .lead-in p a{
   color:#ad621c;
   text-decoration:none;
 }
-#docs .lead-in p a:hover{
+#personal .lead-in p a:hover{
   text-decoration:underline;
 }
-#docs .more.less{
+#personal .more.less{
 /*  border:1px solid red;*/
 font-size:9px;
   line-height:4px;
@@ -364,11 +364,11 @@ font-size:9px;
   padding:0;
 }
 
-#docs #introduction p a{
+#personal #introduction p a{
   color:#ad621c;
   text-decoration:none;
 }
-#docs #introduction p a:hover{
+#personal #introduction p a:hover{
   text-decoration:underline;
 }
 
