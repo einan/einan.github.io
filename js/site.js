@@ -430,7 +430,7 @@
 							'emrah inan resume using arbor.js and jQuery')
 					dom.find('> a').removeClass('active').attr('href', '#')
 
-					$('#who').fadeTo('fast', 0, function() {
+					$('#what').fadeTo('fast', 0, function() {
 						$(this).hide()
 						$(that).trigger({
 							type : 'mode',
