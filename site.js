@@ -304,7 +304,7 @@
           break
           
           case 'introduction':
-          case 'reference':
+          case 'education':
           $(that).trigger({type:'mode', mode:'hidden', dt:dt})
           dom.find('> p').text(_path)
           dom.find('> a').addClass('active').attr('href','#')
