@@ -305,7 +305,7 @@
         switch (_path){
           case '':
           case '/':
-          dom.find('p').text('a graph visualization library using web workers and jQuery')
+          dom.find('p').text('emrah inan resume using arbor.js and jQuery')
           dom.find('> a').removeClass('active').attr('href','#')
 
           $('#docs').fadeTo('fast',0, function(){
@@ -342,14 +342,14 @@
     }
 
     var theUI = {
-      nodes:{"arbor.js":{color:"red", shape:"dot", alpha:1}, 
+      nodes:{"me":{color:"#8F1741", shape:"dot", alpha:1}, 
       
-             demos:{color:CLR.branch, shape:"dot", alpha:1}, 
+             education:{color:"#0071B1", shape:"dot", alpha:1}, 
              halfviz:{color:CLR.demo, alpha:0, link:'/halfviz'},
              atlas:{color:CLR.demo, alpha:0, link:'/atlas'},
              echolalia:{color:CLR.demo, alpha:0, link:'/echolalia'},
 
-             docs:{color:CLR.branch, shape:"dot", alpha:1}, 
+             docs:{color:"#0071B1", shape:"dot", alpha:1}, 
              reference:{color:CLR.doc, alpha:0, link:'#reference'},
              introduction:{color:CLR.doc, alpha:0, link:'#introduction'},
 
