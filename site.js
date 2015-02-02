@@ -147,7 +147,7 @@
                  dom.removeClass('linkable')
                  window.status = ''
               }
-            }else if ($.inArray(nearest.node.name, ['me','code','docs','education']) >=0 ){
+            }else if ($.inArray(nearest.node.name, ['me','social','docs','education']) >=0 ){
               if (nearest.node.name!=_section){
                 _section = nearest.node.name
                 that.switchSection(_section)
