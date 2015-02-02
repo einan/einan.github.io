@@ -322,24 +322,17 @@
   }
   
   $(document).ready(function(){
-    var CLR = {
-      branch:"#b2b19d",
-      code:"orange",
-      doc:"#922E00",
-      demo:"#a7af00"
-    }
-
     var theUI = {
       nodes:{"me":{color:"#8F1741", shape:"dot", alpha:1}, 
       
              education:{color:"#0071B1", shape:"dot", alpha:1}, 
-             PhD:{color:CLR.demo, alpha:0, link:'/halfviz'},
-             MSc:{color:CLR.demo, alpha:0, link:'/atlas'},
-             BSc:{color:CLR.demo, alpha:0, link:'/echolalia'},
+             PhD:{color:"#a7af00", alpha:0, link:'/halfviz'},
+             MSc:{color:"#a7af00", alpha:0, link:'/atlas'},
+             BSc:{color:"#a7af00", alpha:0, link:'/echolalia'},
 
              docs:{color:"#0071B1", shape:"dot", alpha:1}, 
-             reference:{color:CLR.doc, alpha:0, link:'#reference'},
-             introduction:{color:CLR.doc, alpha:0, link:'#introduction'},
+             reference:{color:"#D86C3C", alpha:0, link:'#reference'},
+             introduction:{color:"#D86C3C", alpha:0, link:'#introduction'},
 
              social:{color:"#0071B1", shape:"dot", alpha:1},
              github:{color:"#009A7B", alpha:0, link:'https://github.com/einan'},
