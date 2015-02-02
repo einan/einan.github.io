@@ -147,7 +147,7 @@
                  dom.removeClass('linkable')
                  window.status = ''
               }
-            }else if ($.inArray(nearest.node.name, ['me','social','docs','education']) >=0 ){
+            }else if ($.inArray(nearest.node.name, ['me','social','personal','skills']) >=0 ){
               if (nearest.node.name!=_section){
                 _section = nearest.node.name
                 that.switchSection(_section)
@@ -233,7 +233,7 @@
         dom.find('> a').click(that.back)
         $('.more').one('click',that.more)
         
-        $('#docs dl:not(.datastructure) dt').click(that.reveal)
+        $('#personal dl:not(.datastructure) dt').click(that.reveal)
         that.update()
         return that
       },
@@ -296,7 +296,7 @@
           dom.find('p').text('emrah inan resume using arbor.js and jQuery')
           dom.find('> a').removeClass('active').attr('href','#')
 
-          $('#docs').fadeTo('fast',0, function(){
+          $('#personal').fadeTo('fast',0, function(){
             $(this).hide()
             $(that).trigger({type:'mode', mode:'visible', dt:dt})
           })
@@ -308,10 +308,10 @@
           $(that).trigger({type:'mode', mode:'hidden', dt:dt})
           dom.find('> p').text(_path)
           dom.find('> a').addClass('active').attr('href','#')
-          $('#docs').stop(true).css({opacity:0}).show().delay(333).fadeTo('fast',1)
+          $('#personal').stop(true).css({opacity:0}).show().delay(333).fadeTo('fast',1)
                     
-          $('#docs').find(">div").hide()
-          $('#docs').find('#'+_path).show()
+          $('#personal').find(">div").hide()
+          $('#personal').find('#'+_path).show()
           document.title = "einan resume » " + _path
           break
         }
@@ -325,13 +325,13 @@
     var theUI = {
       nodes:{"me":{color:"#8F1741", shape:"dot", alpha:1}, 
       
-             education:{color:"#0071B1", shape:"dot", alpha:1}, 
-             PhD:{color:"#a7af00", alpha:0, link:'/halfviz'},
-             MSc:{color:"#a7af00", alpha:0, link:'/atlas'},
-             BSc:{color:"#a7af00", alpha:0, link:'/echolalia'},
+             skills:{color:"#0071B1", shape:"dot", alpha:1}, 
+             programming:{color:"#a7af00", alpha:0, link:'/halfviz'},
+             software:{color:"#a7af00", alpha:0, link:'/atlas'},
+             web:{color:"#a7af00", alpha:0, link:'/echolalia'},
 
-             docs:{color:"#0071B1", shape:"dot", alpha:1}, 
-             reference:{color:"#D86C3C", alpha:0, link:'#reference'},
+             personal:{color:"#0071B1", shape:"dot", alpha:1}, 
+             education:{color:"#D86C3C", alpha:0, link:'#education'},
              introduction:{color:"#D86C3C", alpha:0, link:'#introduction'},
 
              social:{color:"#0071B1", shape:"dot", alpha:1},
@@ -340,15 +340,15 @@
             },
       edges:{
         "me":{
-          education:{length:.8},
-          docs:{length:.8},
+          skills:{length:.8},
+          personal:{length:.8},
           social:{length:.8}
         },
-        education:{PhD:{},
-               MSc:{},
-               BSc:{}
+        skills:{programming:{},
+               software:{},
+               web:{}
         },
-        docs:{reference:{},
+        personal:{education:{},
               introduction:{}
         },
         social:{"github":{},
