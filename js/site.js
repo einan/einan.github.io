@@ -51,6 +51,10 @@
 
 					
 
+										
+
+					
+
 					gfx.line(p1, p2, {
 						stroke : "#9CB4D8",
 						width : 2,
@@ -61,6 +65,10 @@
 					var w = Math.max(20, 20 + gfx.textWidth(node.name))
 					if (node.data.alpha === 0)
 						return
+
+					
+
+										
 
 					
 
@@ -261,6 +269,10 @@
 
 						
 
+												
+
+						
+
 						if (dragged !== null && dragged.node !== null) {
 							var p = sys.fromScreen(s)
 							dragged.node.p = p
@@ -272,6 +284,10 @@
 					dropped : function(e) {
 						if (dragged === null || dragged.node === undefined)
 							return
+
+						
+
+												
 
 						
 
@@ -417,114 +433,111 @@
 		return that
 	}
 
-	$(document).ready(function() {
-		var theUI = {
-			nodes : {
-				"me" : {
-					color : "#8F1741",
-					shape : "dot",
-					alpha : 1
-				},
+	$(document)
+			.ready(
+					function() {
+						var theUI = {
+							nodes : {
+								"me" : {
+									color : "#8F1741",
+									shape : "dot",
+									alpha : 1
+								},
 
-				what : {
-					color : "#0071B1",
-					shape : "dot",
-					alpha : 1
-				},
-				programming : {
-					color : "#a7af00",
-					alpha : 0,
-					link : '/halfviz'
-				},
-				software : {
-					color : "#a7af00",
-					alpha : 0,
-					link : '/atlas'
-				},
-				web : {
-					color : "#a7af00",
-					alpha : 0,
-					link : '/echolalia'
-				},
+								what : {
+									color : "#0071B1",
+									shape : "dot",
+									alpha : 1
+								},
+								"publication 1:I-SEMANTICS-13" : {
+									color : "#a7af00",
+									alpha : 0,
+									link : 'http://dl.acm.org/citation.cfm?doid=2506182.2506202'
+								},
+								"publication 2" : {
+									color : "#a7af00",
+									alpha : 0,
+									link : 'http://www.witpress.com/elibrary/wit-transactions-on-the-built-environment/116/22281'
+								},
 
-				who : {
-					color : "#0071B1",
-					shape : "dot",
-					alpha : 1
-				},
-				education : {
-					color : "#D86C3C",
-					alpha : 0,
-					link : '#education'
-				},
-				introduction : {
-					color : "#D86C3C",
-					alpha : 0,
-					link : '#introduction'
-				},
-				where : {
-					color : "#0071B1",
-					shape : "dot",
-					alpha : 1
-				},
-				github : {
-					color : "#009A7B",
-					alpha : 0,
-					link : 'https://github.com/einan'
-				},
-				"blog" : {
-					color : "#009A7B",
-					alpha : 0,
-					link : 'http://bayinan.blogspot.com.tr/'
-				},
-				"dblp" : {
-					color : "#009A7B",
-					alpha : 0,
-					link : 'http://dblp.uni-trier.de/pers/hj5/i/Inan:Emrah'
-				}
-			},
-			edges : {
-				"me" : {
-					what : {
-						length : .8
-					},
-					who : {
-						length : .8
-					},
-					where : {
-						length : .8
-					}
-				},
-				what : {
-					programming : {},
-					software : {},
-					web : {}
-				},
-				who : {
-					education : {},
-					introduction : {}
-				},
-				where : {
-					"github" : {},
-					"blog" : {},
-					"dblp" : {}
-				}
-			}
-		}
+								who : {
+									color : "#0071B1",
+									shape : "dot",
+									alpha : 1
+								},
+								education : {
+									color : "#D86C3C",
+									alpha : 0,
+									link : '#education'
+								},
+								introduction : {
+									color : "#D86C3C",
+									alpha : 0,
+									link : '#introduction'
+								},
+								where : {
+									color : "#0071B1",
+									shape : "dot",
+									alpha : 1
+								},
+								github : {
+									color : "#009A7B",
+									alpha : 0,
+									link : 'https://github.com/einan'
+								},
+								"blog" : {
+									color : "#009A7B",
+									alpha : 0,
+									link : 'http://bayinan.blogspot.com.tr/'
+								},
+								"dblp" : {
+									color : "#009A7B",
+									alpha : 0,
+									link : 'http://dblp.uni-trier.de/pers/hj5/i/Inan:Emrah'
+								}
+							},
+							edges : {
+								"me" : {
+									what : {
+										length : .8
+									},
+									who : {
+										length : .8
+									},
+									where : {
+										length : .8
+									}
+								},
+								what : {
+									"publication 1" : {},
+									"publication 2" : {},
+									"publication 3" : {}
+								},
+								who : {
+									education : {},
+									introduction : {}
+								},
+								where : {
+									"github" : {},
+									"blog" : {},
+									"dblp" : {}
+								}
+							}
+						}
 
-		var sys = arbor.ParticleSystem()
-		sys.parameters({
-			stiffness : 900,
-			repulsion : 2000,
-			gravity : true,
-			dt : 0.015
-		})
-		sys.renderer = Renderer("#sitemap")
-		sys.graft(theUI)
+						var sys = arbor.ParticleSystem()
+						sys.parameters({
+							stiffness : 900,
+							repulsion : 2000,
+							gravity : true,
+							dt : 0.015
+						})
+						sys.renderer = Renderer("#sitemap")
+						sys.graft(theUI)
 
-		var nav = Nav("#nav")
-		$(sys.renderer).bind('navigate', nav.navigate)
-		$(nav).bind('mode', sys.renderer.switchMode)
-		nav.init()
-	})
+						var nav = Nav("#nav")
+						$(sys.renderer).bind('navigate', nav.navigate)
+						$(nav).bind('mode', sys.renderer.switchMode)
+						nav.init()
+					})
 })(this.jQuery)
