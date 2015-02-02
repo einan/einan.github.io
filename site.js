@@ -1,17 +1,5 @@
-//
-// site.js
-//
-// the arbor.js website
-//
 (function($){
-  // var trace = function(msg){
-  //   if (typeof(window)=='undefined' || !window.console) return
-  //   var len = arguments.length, args = [];
-  //   for (var i=0; i<len; i++) args.push("arguments["+i+"]")
-  //   eval("console.log("+args.join(",")+")")
-  // }  
-  
-  var Renderer = function(elt){
+   var Renderer = function(elt){
     var dom = $(elt)
     var canvas = dom.get(0)
     var ctx = canvas.getContext("2d");
