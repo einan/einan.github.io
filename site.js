@@ -39,7 +39,7 @@
         gfx.clear()
         sys.eachEdge(function(edge, p1, p2){
           if (edge.source.data.alpha * edge.target.data.alpha == 0) return
-          gfx.line(p1, p2, {stroke:"#b2b19d", width:2, alpha:edge.target.data.alpha})
+          gfx.line(p1, p2, {stroke:"#9CB4D8", width:2, alpha:edge.target.data.alpha})
         })
         sys.eachNode(function(node, pt){
           var w = Math.max(20, 20+gfx.textWidth(node.name) )
@@ -342,8 +342,8 @@
              introduction:{color:CLR.doc, alpha:0, link:'#introduction'},
 
              social:{color:"#0071B1", shape:"dot", alpha:1},
-             github:{color:"#E4FCB4", alpha:0, link:'https://github.com/einan'},
-             "blog":{color:"#E4FCB4", alpha:0, link:'http://bayinan.blogspot.com.tr/'}
+             github:{color:"#009A7B", alpha:0, link:'https://github.com/einan'},
+             "blog":{color:"#009A7B", alpha:0, link:'http://bayinan.blogspot.com.tr/'}
             },
       edges:{
         "me":{
