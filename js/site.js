@@ -408,11 +408,28 @@
 					})
 					document.title = "einan resume"
 					break
-
-				case 'introduction':
+					
 				case 'projects':
 				case 'publications':
 				case 'skills':
+					$(that).trigger({
+						type : 'mode',
+						mode : 'hidden',
+						dt : dt
+					})
+					dom.find('> p').text(_path)
+					dom.find('> a').addClass('active').attr('href', '#')
+					$('#what').stop(true).css({
+						opacity : 0
+					}).show().delay(333).fadeTo('fast', 1)
+
+					$('#what').find(">div").hide()
+					$('#what').find('#' + _path).show()
+					document.title = "einan resume » " + _path
+					break
+				}
+
+				case 'introduction':
 				case 'education':
 					$(that).trigger({
 						type : 'mode',
