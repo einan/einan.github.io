@@ -210,7 +210,7 @@
 								window.status = ''
 							}
 						} else if ($.inArray(nearest.node.name, [ 'me',
-								'social', 'personal', 'skills' ]) >= 0) {
+								'where', 'who', 'what' ]) >= 0) {
 							if (nearest.node.name != _section) {
 								_section = nearest.node.name
 								that.switchSection(_section)
@@ -309,7 +309,7 @@
 				dom.find('> a').click(that.back)
 				$('.more').one('click', that.more)
 
-				$('#personal dl:not(.datastructure) dt').click(that.reveal)
+				$('#who dl:not(.datastructure) dt').click(that.reveal)
 				that.update()
 				return that
 			},
@@ -382,7 +382,7 @@
 							'emrah inan resume using arbor.js and jQuery')
 					dom.find('> a').removeClass('active').attr('href', '#')
 
-					$('#personal').fadeTo('fast', 0, function() {
+					$('#who').fadeTo('fast', 0, function() {
 						$(this).hide()
 						$(that).trigger({
 							type : 'mode',
@@ -402,12 +402,12 @@
 					})
 					dom.find('> p').text(_path)
 					dom.find('> a').addClass('active').attr('href', '#')
-					$('#personal').stop(true).css({
+					$('#who').stop(true).css({
 						opacity : 0
 					}).show().delay(333).fadeTo('fast', 1)
 
-					$('#personal').find(">div").hide()
-					$('#personal').find('#' + _path).show()
+					$('#who').find(">div").hide()
+					$('#who').find('#' + _path).show()
 					document.title = "einan resume » " + _path
 					break
 				}
@@ -426,7 +426,7 @@
 					alpha : 1
 				},
 
-				skills : {
+				what : {
 					color : "#0071B1",
 					shape : "dot",
 					alpha : 1
@@ -447,7 +447,7 @@
 					link : '/echolalia'
 				},
 
-				personal : {
+				who : {
 					color : "#0071B1",
 					shape : "dot",
 					alpha : 1
@@ -462,7 +462,7 @@
 					alpha : 0,
 					link : '#introduction'
 				},
-				social : {
+				where : {
 					color : "#0071B1",
 					shape : "dot",
 					alpha : 1
@@ -485,26 +485,26 @@
 			},
 			edges : {
 				"me" : {
-					skills : {
+					what : {
 						length : .8
 					},
-					personal : {
+					who : {
 						length : .8
 					},
-					social : {
+					where : {
 						length : .8
 					}
 				},
-				skills : {
+				what : {
 					programming : {},
 					software : {},
 					web : {}
 				},
-				personal : {
+				who : {
 					education : {},
 					introduction : {}
 				},
-				social : {
+				where : {
 					"github" : {},
 					"blog" : {},
 					"dblp" : {}

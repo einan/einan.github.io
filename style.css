@@ -118,26 +118,26 @@ body{
 }
 
 
-#personal > div{
+#who > div{
   display:none;
   padding:0 0 60px 0;
 }
 
-#personal{
+#who{
   position:relative;
   margin:20px 0 0 160px;
   padding:0 70px 0 0;
 /*  border-right:1px solid #ccc;*/
 }
 
-#personal h1{
+#who h1{
   margin:20px 0 2px 0;
   color:#998;
   font:16px "Gill Sans", Helvetica, Arial, sans-serif;
   color:#ad621c;
 }
 
-/*#personal h1{
+/*#who h1{
   margin:20px 0 2px -150px;
   width:134px;
   color:#998;
@@ -146,13 +146,13 @@ body{
 }
 */
 
-#personal dl + h1{
+#who dl + h1{
   margin-top:30px;
   padding-top:10px;
 }
 
 
-#personal h2{
+#who h2{
   margin:0;
   position:absolute;
   left:-150px;
@@ -165,19 +165,19 @@ body{
   color:#998;  
 }
 
-#personal h2 a{
+#who h2 a{
   color:black;
   text-decoration:none;
   font-size:130%;
 }
 
-#personal > div > p{
+#who > div > p{
   display:block;
   text-indent:1em;
   width:380px;
 }
 
-#personal p.code{
+#who p.code{
 /*  width:999px;*/
   display:block;
   margin:13px;
@@ -186,31 +186,31 @@ body{
   color:#665;
 }
 
-#personal p code{
+#who p code{
   font:12px Monaco, sans-serif;
   color:#665;
 }
-#personal p.code+p{
+#who p.code+p{
   text-indent:0;
 }
 
-#personal h2:first-child+p{
+#who h2:first-child+p{
   margin-top:0;
 }
 
-#personal .figure + p,
-#personal h2+p{
+#who .figure + p,
+#who h2+p{
   text-indent:0;
 }
 
 
-#personal b{
+#who b{
   text-transform:uppercase;
   font-size:80%;
 }
 
 
-#personal .figure{
+#who .figure{
   position:absolute;
   left:440px;
 }
@@ -219,7 +219,7 @@ dl{
   margin:0 0 16px 0;
 }
 
-#personal code{
+#who code{
   font:12px Monaco, Courier, monospace;
 }
 dt{
@@ -270,40 +270,40 @@ dd .desc .bang{
   margin-top:5px;
 }
 
-#personal dd p{
+#who dd p{
   text-indent:-10px;
   margin:0 0 2px 0;
   width:380px;
 }
 
-#personal .lead-in{
+#who .lead-in{
   margin-bottom:16px;  
 }
-#personal .lead-in p{
+#who .lead-in p{
   margin:0;
   text-indent:0;
   width:380px;
   font-style:italic;
 }
-#personal .lead-in .more{
+#who .lead-in .more{
   color:#AD621C;
   text-decoration:none;
   font-style:italic;
 }
-#personal .lead-in .more:hover{
+#who .lead-in .more:hover{
   text-decoration:underline;
 }
-#personal .lead-in .more ~ *{
+#who .lead-in .more ~ *{
   display:none;
 }
 
-#personal .lead-in p.code{
+#who .lead-in p.code{
   width:570px;
   font-style:normal;
   margin:10px;
 }
 
-#personal .lead-in hr{
+#who .lead-in hr{
   margin:0px 0 12px 0px;
   border:0;
   border-top:1px solid #aa9;
@@ -314,23 +314,23 @@ dd .desc .bang{
 
 
 
-#personal dd p code.arg{
+#who dd p code.arg{
   color:#ad621c;
 }
 
-#personal dd hr{
+#who dd hr{
   margin:-4px 0 12px -10px;
   border:0;
   border-top:1px solid #aa9;
   width:390px;
 }
 
-#personal .lead-in ul{
+#who .lead-in ul{
   margin:0 0 20px 13px;
   font-style:italic;
   color:#998;
 }
-#personal .lead-in ul em{
+#who .lead-in ul em{
   color:black;
   font-style:normal;
   width:60px;
@@ -338,7 +338,7 @@ dd .desc .bang{
   text-align:right;
 }
 
-#personal .lead-in ul b{
+#who .lead-in ul b{
   size:60%;
   color:#950;
   text-transform:none;
@@ -349,14 +349,14 @@ dd .desc .bang{
   text-align:right;
   margin-right:12px;
 }
-#personal .lead-in p a{
+#who .lead-in p a{
   color:#ad621c;
   text-decoration:none;
 }
-#personal .lead-in p a:hover{
+#who .lead-in p a:hover{
   text-decoration:underline;
 }
-#personal .more.less{
+#who .more.less{
 /*  border:1px solid red;*/
 font-size:9px;
   line-height:4px;
@@ -364,11 +364,11 @@ font-size:9px;
   padding:0;
 }
 
-#personal #introduction p a{
+#who #introduction p a{
   color:#ad621c;
   text-decoration:none;
 }
-#personal #introduction p a:hover{
+#who #introduction p a:hover{
   text-decoration:underline;
 }
 
