@@ -333,35 +333,33 @@
       nodes:{"me":{color:"#8F1741", shape:"dot", alpha:1}, 
       
              education:{color:"#0071B1", shape:"dot", alpha:1}, 
-             halfviz:{color:CLR.demo, alpha:0, link:'/halfviz'},
-             atlas:{color:CLR.demo, alpha:0, link:'/atlas'},
-             echolalia:{color:CLR.demo, alpha:0, link:'/echolalia'},
+             PhD:{color:CLR.demo, alpha:0, link:'/halfviz'},
+             MSc:{color:CLR.demo, alpha:0, link:'/atlas'},
+             BSc:{color:CLR.demo, alpha:0, link:'/echolalia'},
 
              docs:{color:"#0071B1", shape:"dot", alpha:1}, 
              reference:{color:CLR.doc, alpha:0, link:'#reference'},
              introduction:{color:CLR.doc, alpha:0, link:'#introduction'},
 
-             code:{color:CLR.branch, shape:"dot", alpha:1},
-             github:{color:CLR.code, alpha:0, link:'https://github.com/samizdatco/arbor'},
-             ".zip":{color:CLR.code, alpha:0, link:'/js/dist/arbor-v0.92.zip'},
-             ".tar.gz":{color:CLR.code, alpha:0, link:'/js/dist/arbor-v0.92.tar.gz'}
+             social:{color:"#0071B1", shape:"dot", alpha:1},
+             github:{color:"#E4FCB4", alpha:0, link:'https://github.com/einan'},
+             blog:{color:"#E4FCB4", alpha:0, link:'http://bayinan.blogspot.com.tr/'}
             },
       edges:{
         "me":{
           education:{length:.8},
           docs:{length:.8},
-          code:{length:.8}
+          social:{length:.8}
         },
-        education:{halfviz:{},
-               atlas:{},
-               echolalia:{}
+        education:{PhD:{},
+               MSc:{},
+               BSc:{}
         },
         docs:{reference:{},
               introduction:{}
         },
-        code:{".zip":{},
-              ".tar.gz":{},
-              "github":{}
+        social:{"github":{},
+              "blog":{}
         }
       }
     }
