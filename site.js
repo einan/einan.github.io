@@ -343,7 +343,7 @@
 
              social:{color:"#0071B1", shape:"dot", alpha:1},
              github:{color:"#E4FCB4", alpha:0, link:'https://github.com/einan'},
-             blog:{color:"#E4FCB4", alpha:0, link:'http://bayinan.blogspot.com.tr/'}
+             "blog":{color:"#E4FCB4", alpha:0, link:'http://bayinan.blogspot.com.tr/'}
             },
       edges:{
         "me":{
