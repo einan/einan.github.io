@@ -66,7 +66,7 @@ body{
   min-width:100%;
 }
 #nav{
-  background:transparent url(logo.png) 40px 0 no-repeat;
+  background:transparent url(images/profile.jpg) 40px 0 no-repeat;
   font-style:italic;
   color:#887;
   padding:17px 0 0 160px;
@@ -79,7 +79,7 @@ body{
   display:none;
 }
 #nav .back{
-  background:url(back-arrow.png) 6px 6px no-repeat;
+  background:url(images/profile.jpg) 6px 6px no-repeat;
   width:140px;
   height:36px;
   display:none;
