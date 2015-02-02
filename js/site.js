@@ -55,6 +55,14 @@
 
 					
 
+															
+
+					
+
+										
+
+					
+
 					gfx.line(p1, p2, {
 						stroke : "#9CB4D8",
 						width : 2,
@@ -65,6 +73,14 @@
 					var w = Math.max(20, 20 + gfx.textWidth(node.name))
 					if (node.data.alpha === 0)
 						return
+
+					
+
+										
+
+					
+
+															
 
 					
 
@@ -273,6 +289,14 @@
 
 						
 
+																		
+
+						
+
+												
+
+						
+
 						if (dragged !== null && dragged.node !== null) {
 							var p = sys.fromScreen(s)
 							dragged.node.p = p
@@ -284,6 +308,14 @@
 					dropped : function(e) {
 						if (dragged === null || dragged.node === undefined)
 							return
+
+						
+
+												
+
+						
+
+																		
 
 						
 
@@ -408,7 +440,7 @@
 					})
 					document.title = "einan resume"
 					break
-					
+
 				case 'projects':
 				case 'publications':
 				case 'skills':
@@ -427,7 +459,6 @@
 					$('#what').find('#' + _path).show()
 					document.title = "einan resume » " + _path
 					break
-				}
 
 				case 'introduction':
 				case 'education':
