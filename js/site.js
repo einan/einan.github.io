@@ -51,10 +51,6 @@
 
 					
 
-										
-
-					
-
 					gfx.line(p1, p2, {
 						stroke : "#9CB4D8",
 						width : 2,
@@ -67,8 +63,6 @@
 						return
 
 					
-
-										
 
 					
 
@@ -273,6 +267,14 @@
 
 						
 
+																		
+
+						
+
+												
+
+						
+
 						if (dragged !== null && dragged.node !== null) {
 							var p = sys.fromScreen(s)
 							dragged.node.p = p
@@ -284,6 +286,14 @@
 					dropped : function(e) {
 						if (dragged === null || dragged.node === undefined)
 							return
+
+						
+
+												
+
+						
+
+																		
 
 						
 
@@ -395,7 +405,7 @@
 				case '':
 				case '/':
 					dom.find('p').text(
-							'emrah inan resume using arbor.js and jQuery')
+							'emrah inan resume using arbor.js')
 					dom.find('> a').removeClass('active').attr('href', '#')
 
 					$('#who').fadeTo('fast', 0, function() {
