@@ -70,7 +70,7 @@ body{
   font-style:italic;
   color:#887;
   padding:17px 0 0 160px;
-  height:30px;
+  height:80px;
   margin:9px 0px 0 0px;
   border-bottom:1px solid #bbb;
 }
@@ -79,7 +79,7 @@ body{
   display:none;
 }
 #nav .back{
-  background:url(images/back.png) 6px 6px no-repeat;
+  background:url(images/back2.png) 6px 6px no-repeat;
   width:140px;
   height:36px;
   display:none;
