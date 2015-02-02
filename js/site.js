@@ -51,18 +51,6 @@
 
 					
 
-										
-
-					
-
-															
-
-					
-
-										
-
-					
-
 					gfx.line(p1, p2, {
 						stroke : "#9CB4D8",
 						width : 2,
@@ -73,18 +61,6 @@
 					var w = Math.max(20, 20 + gfx.textWidth(node.name))
 					if (node.data.alpha === 0)
 						return
-
-					
-
-										
-
-					
-
-															
-
-					
-
-										
 
 					
 
@@ -285,18 +261,6 @@
 
 						
 
-												
-
-						
-
-																		
-
-						
-
-												
-
-						
-
 						if (dragged !== null && dragged.node !== null) {
 							var p = sys.fromScreen(s)
 							dragged.node.p = p
@@ -308,18 +272,6 @@
 					dropped : function(e) {
 						if (dragged === null || dragged.node === undefined)
 							return
-
-						
-
-												
-
-						
-
-																		
-
-						
-
-												
 
 						
 
@@ -430,7 +382,7 @@
 							'emrah inan resume using arbor.js and jQuery')
 					dom.find('> a').removeClass('active').attr('href', '#')
 
-					$('#what').fadeTo('fast', 0, function() {
+					$('#who').fadeTo('fast', 0, function() {
 						$(this).hide()
 						$(that).trigger({
 							type : 'mode',
@@ -439,25 +391,6 @@
 						})
 					})
 					document.title = "einan resume"
-					break
-
-				case 'projects':
-				case 'publications':
-				case 'skills':
-					$(that).trigger({
-						type : 'mode',
-						mode : 'hidden',
-						dt : dt
-					})
-					dom.find('> p').text(_path)
-					dom.find('> a').addClass('active').attr('href', '#')
-					$('#what').stop(true).css({
-						opacity : 0
-					}).show().delay(333).fadeTo('fast', 1)
-
-					$('#what').find(">div").hide()
-					$('#what').find('#' + _path).show()
-					document.title = "einan resume » " + _path
 					break
 
 				case 'introduction':
@@ -498,20 +431,20 @@
 					shape : "dot",
 					alpha : 1
 				},
-				publications : {
-					color : "#A39686",
+				programming : {
+					color : "#a7af00",
 					alpha : 0,
-					link : '#publications'
+					link : '/halfviz'
 				},
-				projects : {
-					color : "#A39686",
+				software : {
+					color : "#a7af00",
 					alpha : 0,
-					link : '#projects'
+					link : '/atlas'
 				},
-				skills : {
-					color : "#A39686",
+				web : {
+					color : "#a7af00",
 					alpha : 0,
-					link : '#skills'
+					link : '/echolalia'
 				},
 
 				who : {
@@ -563,9 +496,9 @@
 					}
 				},
 				what : {
-					publications : {},
-					projects : {},
-					skilss : {}
+					programming : {},
+					software : {},
+					web : {}
 				},
 				who : {
 					education : {},
