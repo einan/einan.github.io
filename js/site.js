@@ -449,7 +449,7 @@
 									shape : "dot",
 									alpha : 1
 								},
-								"publication 1:I-SEMANTICS-13" : {
+								"publication 1" : {
 									color : "#a7af00",
 									alpha : 0,
 									link : 'http://dl.acm.org/citation.cfm?doid=2506182.2506202'
@@ -510,8 +510,7 @@
 								},
 								what : {
 									"publication 1" : {},
-									"publication 2" : {},
-									"publication 3" : {}
+									"publication 2" : {}
 								},
 								who : {
 									education : {},
