@@ -51,6 +51,10 @@
 
 					
 
+										
+
+					
+
 					gfx.line(p1, p2, {
 						stroke : "#9CB4D8",
 						width : 2,
@@ -61,6 +65,10 @@
 					var w = Math.max(20, 20 + gfx.textWidth(node.name))
 					if (node.data.alpha === 0)
 						return
+
+					
+
+										
 
 					
 
@@ -261,6 +269,10 @@
 
 						
 
+												
+
+						
+
 						if (dragged !== null && dragged.node !== null) {
 							var p = sys.fromScreen(s)
 							dragged.node.p = p
@@ -272,6 +284,10 @@
 					dropped : function(e) {
 						if (dragged === null || dragged.node === undefined)
 							return
+
+						
+
+												
 
 						
 
@@ -394,6 +410,9 @@
 					break
 
 				case 'introduction':
+				case 'projects':
+				case 'publications':
+				case 'skills':
 				case 'education':
 					$(that).trigger({
 						type : 'mode',
@@ -431,20 +450,20 @@
 					shape : "dot",
 					alpha : 1
 				},
-				programming : {
-					color : "#a7af00",
+				publications : {
+					color : "#A39686",
 					alpha : 0,
-					link : '/halfviz'
+					link : '#publications'
 				},
-				software : {
-					color : "#a7af00",
+				projects : {
+					color : "#A39686",
 					alpha : 0,
-					link : '/atlas'
+					link : '#projects'
 				},
-				web : {
-					color : "#a7af00",
+				skills : {
+					color : "#A39686",
 					alpha : 0,
-					link : '/echolalia'
+					link : '#skills'
 				},
 
 				who : {
@@ -496,9 +515,9 @@
 					}
 				},
 				what : {
-					programming : {},
-					software : {},
-					web : {}
+					publications : {},
+					projects : {},
+					skilss : {}
 				},
 				who : {
 					education : {},
