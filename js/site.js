@@ -405,7 +405,7 @@
 				case '':
 				case '/':
 					dom.find('p').text(
-							'emrah inan resume using arbor.js')
+							'emrah inan resume "all we need is data"')
 					dom.find('> a').removeClass('active').attr('href', '#')
 
 					$('#who').fadeTo('fast', 0, function() {
